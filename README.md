@@ -7,4 +7,4 @@
 
 
 ## Developer Resources
- * (Introducing Streaming API)[https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm]
+ * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
