@@ -38,7 +38,7 @@ Standard objects supported throught a pilot program:
 * 13. ServiceContract
 
 ``` 
-    // PushTopic lets you subscribe to channel to track changes on accounts whose billins city is SF>
+    // PushTopic lets you subscribe to channel to track changes on accounts whose billins city is SF.
     PushTopic pushTopic = new OushTopic();
     pushTopic.Name = 'AccountUpdate';
     pushTopic.Query = 'SELECT Id, Name, Phone FROM
