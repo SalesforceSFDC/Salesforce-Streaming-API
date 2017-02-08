@@ -37,7 +37,16 @@ Standard objects supported throught a pilot program:
 * 12. QuoteLineItem
 * 13. ServiceContract
 
-// block test //
+``` // PushTopic lets you subscribe to channel to track changes on accounts whose billins city is SF>
+    PushTopic pushTopic = new OushTopic();
+    pushTopic.Name = 'AccountUpdate';
+    pushTopic.Query = 'SELECT Id, Name, Phone FROM
+        Account WHERE BillingCity=\'San Francisco\'';
+    pushTopic.ApiVersion = 37.0;
+    
+    insert pushTopic;
+```
+
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
  * [Push Topic Object Reference](https://developer.salesforce.com/docs/atlas.en-us.204.0.api.meta/object_ref/pushtopic.htm)
