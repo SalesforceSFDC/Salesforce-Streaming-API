@@ -38,7 +38,7 @@ Standard objects supported throught a pilot program:
 * 13. ServiceContract
 
 ### Example 
-``` 
+```Apex
     // PushTopic lets you subscribe to channel to track changes on accounts whose billins city is SF.
     PushTopic pushTopic = new OushTopic();
     pushTopic.Name = 'AccountUpdate';
@@ -67,7 +67,22 @@ pushTopic.NotfiyForOperationDelete = true;
 
 ```json
 {
-    "clientId"
+    "clientId": "3e4gr556"
+    "data": {
+        "event": {
+            "createdDate": "2016-09-16T19:45:27.454Z",
+            "replayId": 1,
+            "type": "created"
+      },
+     "sobject": {
+        "Phone": "(415) 555-1212",
+        "Id": "001D000000KneakIAB",
+        "Name": "Blackbeard"
+      }
+  },
+  "channel": "/topic/AccountUpdates"
+}
+
 ```
 
 ## Developer Resources
