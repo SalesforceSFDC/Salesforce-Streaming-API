@@ -54,6 +54,16 @@ NotifyForFields Value | Description
 ------------ | -------------
 All | Notifications are generated for all record field changes, provided the evaluated records match the criteria specfied in the WHERE clause.
 Referenced (Default) | Changes to fields referenced in the SELECT and WHERE clauses are evaluated.  Notifications are generated for the evaluated records only if they match the criteria specified in the WHERE clause.
+Select | Changes to fields referenced in the SELECT clause are evaluated.  Notifications are generated for the evaluated records only if they match the criteria specified in the WHERE clause.
+Where | Changes to the fields referenced in the WHERE clause are evaluated.  Notifications are generated for the evaluated records only if they match the criteria specified in the WHERE clause.
+
+To set notification preference explicitly:
+```
+pushTopic.NotifyForOperationCreate = true;
+pushTopic.NotifyForOperationUpdate = true;
+pushTopic.NotifyForOperationUndelete = true;
+pushTopic.NotfiyForOperationDelete = true;
+```
 
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
