@@ -100,6 +100,11 @@ The following requirements apply to PushTopic queries:
  * Only one object per query is allowed.
  * The object must be valid for the specified API version.
 
+As of API version 37.0, Salesforce stores events that match PushTopic queries, even if no one is subscribed to the PushTopic. The events are stored for 24 hours, and you can retrieve them at any time during that window. As of API version 37.0, each event notification contains a field called replayId.  
+
+Similar to replaying a video, Streaming API replays the event notifications that were sent by using the replayId field. The value of the replayId field is a number that identifies the event in the stream. The replay ID is unique for the org and channel. When you replay an event, you’re retrieving a stored event from a location in the stored stream. You can either retrieve a stream of events starting after the event specified by a replay ID, or you can retrieve all stored events. Here’s a summary of the replay options we can specify when subscribing to a channel.
+
+
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
  * [Push Topic Object Reference](https://developer.salesforce.com/docs/atlas.en-us.204.0.api.meta/object_ref/pushtopic.htm)
