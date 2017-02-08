@@ -58,11 +58,16 @@ Select | Changes to fields referenced in the SELECT clause are evaluated.  Notif
 Where | Changes to the fields referenced in the WHERE clause are evaluated.  Notifications are generated for the evaluated records only if they match the criteria specified in the WHERE clause.
 
 To set notification preference explicitly:
-```
+```java
 pushTopic.NotifyForOperationCreate = true;
 pushTopic.NotifyForOperationUpdate = true;
 pushTopic.NotifyForOperationUndelete = true;
 pushTopic.NotfiyForOperationDelete = true;
+```
+
+```
+{
+    "clientId"
 ```
 
 ## Developer Resources
