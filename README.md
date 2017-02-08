@@ -50,7 +50,11 @@ Standard objects supported throught a pilot program:
 ```
 At the minimum, define the PushTopic name, query and API version.  Use the default values for the remaining properties.  By default, the fields in the SELECT statement field list and WHERE clause are the ones that trigger notifications.  Notifications are sent only for the records that match the criteria in the WHERE clause.  To change whihch fields trigger notifications, set pushTopic.NotifyForFields to one on these values:
 
-
+NotifyForFields Value | Description
+------------ | -------------
+All | Notifications are generated for all record field changes, provided the evaluated records match
+        the criteria specfied in the WHERE clause.
+Referenced (Default) | 
 
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
