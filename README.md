@@ -53,7 +53,7 @@ At the minimum, define the PushTopic name, query and API version.  Use the defau
 NotifyForFields Value | Description
 ------------ | -------------
 All | Notifications are generated for all record field changes, provided the evaluated records match the criteria specfied in the WHERE clause.
-Referenced (Default) | 
+Referenced (Default) | Changes to fields referenced in the SELECT and WHERE clauses are evaluated.  Notifications are generated for the evaluated records only if they match the criteria specified in the WHERE clause.
 
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
