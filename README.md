@@ -21,7 +21,20 @@ Salesforce Streaming API:
 
 PushTopic queries support all custom objects.  PushTopic queries support the following standard objects:
 * 1. Account
-* 2. 
+* 2. Campaign
+* 3. Case
+* 4. Contact
+* 5. Lead
+* 6. Opportunity
+* 7. Task
+
+Standard objects supported throught a pilot program:
+* 8. ContractLineItem
+* 9. Entitlement
+* 10. LiveChatTranscript
+* 11. Quote
+* 12. QuoteLineItem
+* 13. ServiceContract
 
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
