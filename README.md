@@ -20,8 +20,8 @@ Salesforce Streaming API:
 ### Supported Topics in PushTopic Queries
 
 PushTopic queries support all custom objects.  PushTopic queries support the following standard objects:
-1. Account
-2. 
+* 1. Account
+* 2. 
 
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
