@@ -95,6 +95,11 @@ SOQL query example:
 SELECT Id, Name, Phone FROM Account WHERE BillingCity='San Francisco' OR BillingCity='New York'
 ```
 
+The following requirements apply to PushTopic queries:
+ * The SELECT statement's field list must include Id.
+ * Only one object per query is allowed.
+ * The object must be valid for the specified API version.
+
 ## Developer Resources
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
  * [Push Topic Object Reference](https://developer.salesforce.com/docs/atlas.en-us.204.0.api.meta/object_ref/pushtopic.htm)
