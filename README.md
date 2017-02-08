@@ -65,7 +65,7 @@ pushTopic.NotifyForOperationUndelete = true;
 pushTopic.NotfiyForOperationDelete = true;
 ```
 
-```
+```json
 {
     "clientId"
 ```
