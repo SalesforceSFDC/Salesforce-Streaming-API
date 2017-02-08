@@ -52,8 +52,7 @@ At the minimum, define the PushTopic name, query and API version.  Use the defau
 
 NotifyForFields Value | Description
 ------------ | -------------
-All | Notifications are generated for all record field changes, provided the evaluated records match
-        the criteria specfied in the WHERE clause.
+All | Notifications are generated for all record field changes, provided the evaluated records match the criteria specfied in the WHERE clause.
 Referenced (Default) | 
 
 ## Developer Resources
