@@ -86,7 +86,7 @@ pushTopic.NotfiyForOperationDelete = true;
 ```
 
 SOQL query:
-```SOQL
+```SQL
 SELECT <comma-separated list of fields> FROM <Salesforce object> WHERE <filter criteria>
 ```
 
