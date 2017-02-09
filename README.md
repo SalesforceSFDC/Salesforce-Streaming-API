@@ -109,5 +109,3 @@ Similar to replaying a video, Streaming API replays the event notifications that
  * [Introducing Streaming API](https://developer.salesforce.com/docs/atlas.en-us.204.0.api_streaming.meta/api_streaming/intro_stream.htm)
  * [Push Topic Object Reference](https://developer.salesforce.com/docs/atlas.en-us.204.0.api.meta/object_ref/pushtopic.htm)
     
-![Logo](/Users/vukdukic/Desktop/Screen\Shot\2017-02-07\at\8.50.52\PM.png)
-Format: ![Text](url)
