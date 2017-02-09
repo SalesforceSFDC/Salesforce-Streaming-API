@@ -1,0 +1,63 @@
+Running streaming client example....
+Login successful!
+Server URL: https://www.salesforce.com
+Session ID=00DD0000000FSp9!AQIAQIVjGYijFhiAROTc455T6kEVeJGXuW5VCnp
+    LANCMawS7.p5fXbjYlqCgx7They_zFjmP5n9HxvfUA6xGSGtC1Nb6P4S.
+
+Waiting for handshake
+[CHANNEL:META_HANDSHAKE]: 
+{
+    "id":"1",
+    "minimumVersion":"1.0",
+    "supportedConnectionTypes":["long-polling"],
+    "successful":true,
+    "channel":"/meta/handshake",
+    "clientId":"31t0cjzfbgnfqn1rggumba0k98u",
+    "version":"1.0"
+}
+
+[CHANNEL:META_CONNECT]: 
+{
+    "id":"2",
+    "successful":true,
+    "advice":{"interval":0,"reconnect":"retry","timeout":110000},
+    "channel":"/meta/connect"}
+    Subscribing for channel: /topic/InvoiceStatementUpdates
+    Waiting for streamed data from your organization ...
+[CHANNEL:META_SUBSCRIBE]: 
+{
+    "id":"4",
+    "subscription":"/topic/InvoiceStatementUpdates",
+    "successful":true,
+    "channel":"/meta/subscribe"
+}
+
+[CHANNEL:META_CONNECT]: 
+{
+    "id":"3",
+    "successful":true,
+    "channel":"/meta/connect"
+}
+
+Received Message: 
+{
+"data":
+    {
+      "sobject":
+      {
+        "Name":"INV-0002",
+        "Id":"001D000000J3fTHIAZ",
+        "Status__c":"Pending"},
+        "event":{"type":"updated",
+        "createdDate":"2011-09-06T18:51:08.000+0000"
+      }
+    },
+    "channel":"/topic/InvoiceStatementUpdates"
+}
+
+[CHANNEL:META_CONNECT]: 
+{
+    "id":"5",
+    "successful":true,
+    "channel":"/meta/connect"
+}
