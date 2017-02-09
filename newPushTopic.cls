@@ -1,0 +1,10 @@
+PushTopic pushTopic = new PushTopic();
+pushTopic.Name = 'InvoiceStatementUpdates';
+pushTopic.Query = 'SELECT Id, Name, Status__c, Description__c FROM Invoice_Statement__c';
+pushTopic.ApiVersion = 38.0;
+pushTopic.NotifyForOperationCreate = true;
+pushTopic.NotifyForOperationUpdate = true;
+pushTopic.NotifyForOperationUndelete = true;
+pushTopic.NotifyForOperationDelete = true;
+pushTopic.NotifyForFields = 'Referenced';
+insert pushTopic;
