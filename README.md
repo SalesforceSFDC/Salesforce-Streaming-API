@@ -40,7 +40,7 @@ Standard objects supported throught a pilot program:
 ### Example 
 ```Apex
     // PushTopic lets you subscribe to channel to track changes on accounts whose billins city is SF.
-    PushTopic pushTopic = new OushTopic();
+    PushTopic pushTopic = new PushTopic();
     pushTopic.Name = 'AccountUpdate';
     pushTopic.Query = 'SELECT Id, Name, Phone FROM
         Account WHERE BillingCity=\'San Francisco\'';
